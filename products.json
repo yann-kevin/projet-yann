@@ -1,20 +1,22 @@
 [
-{
-  "id": "1",
-  "name": "CHOCOLAT",
-  "description": "Recettes à base de chocolat",
-  "USD_price": 23,
-  "EUR_price": 26,
-  "file_link": "https://recettes.com/chocolat",
-  "creation_date": "2020-10-23T11:08:15.411Z",
-  "orders_counter": 3
-},
-{"id": "2",
-"name": "VANILLE",
-"description": "Recettes à base de vanille",
-"USD_price": 13,
-"EUR_price": 16,
-"file_link": "https://recettes.com/vanille",
-"creation_date": "2020-11-23T11:08:15.411Z",
-"orders_counter": 4
-}]
+  {
+    "id": "1",
+    "name": "CHOCOLAT",
+    "description": "Recettes à base de chocolat",
+    "USD_price": 23,
+    "EUR_price": 26,
+    "file_link": "https://recettes.com/chocolat",
+    "creation_date": "2020-10-23T11:08:15.411Z",
+    "orders_counter": 8
+  },
+  {
+    "id": "2",
+    "name": "VANILLE",
+    "description": "Recettes à base de vanille",
+    "USD_price": 13,
+    "EUR_price": 16,
+    "file_link": "https://recettes.com/vanille",
+    "creation_date": "2020-11-23T11:08:15.411Z",
+    "orders_counter": 6
+  }
+]
