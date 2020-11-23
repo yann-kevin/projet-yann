@@ -1,6 +1,8 @@
 var fs = require('fs');
+var path = require('path');
+var filename = "products.json";
 
-fs.readFile(`${__dirname}/products.json` , (err, data) => {
+fs.readFile(path.join(__dirname, filename) , (err, data) => {
     if (err) {
         console.error(err);
         return
