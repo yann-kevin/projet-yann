@@ -6,10 +6,7 @@ var rl = readline.createInterface({input: process.stdin, output: process.stdout,
 
 function getAllProducts() {
     fs.readFile(path.join(__dirname, filename), (err, data) => {
-        if (err) {
-            console.error(err);
-            return
-        }
+        if (err) return console.log(err);
         console.log("Bienvenue, voici les produits disponibles");
         try {
             var books = JSON.parse(data);
@@ -18,15 +15,14 @@ function getAllProducts() {
             });
         } catch (e) {
             console.log(e);
+            return
         }
     });
 }
 
 function orderProductById(id) {
     fs.readFile(path.join(__dirname, filename), (err, data) => {
-        if (err) {
-            console.error(err);
-        }
+        if (err) return console.log(err);
         try {
             var books = JSON.parse(data);
             var bookUrl = "";
@@ -46,6 +42,7 @@ function orderProductById(id) {
             });
         } catch (e) {
             console.log(e);
+            return 
         }
     });
 }
