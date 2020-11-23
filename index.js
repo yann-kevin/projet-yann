@@ -1,6 +1,10 @@
 var fs = require('fs');
-let books = JSON.parse(fs.readFileSync(`${__dirname}/products.json`, 'utf8'));
 
-books.forEach((book)=>{
-    console.log(JSON.stringify(book));
+fs.readFile(`${__dirname}/products.json` , (err, data) => {
+    if (err) {
+        console.error(err);
+        return
+    }
+    var books = JSON.parse(data);
+    console.log(books)
 });
